@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         let person = Person(name: "John", phone: phone)
 
         person.answerPhone()
+        
+        // Question: Did the memory get cleaned up?
     }
 }
 
