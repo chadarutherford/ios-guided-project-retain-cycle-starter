@@ -19,6 +19,10 @@ class Person {
         setupPhone()
     }
     
+    func answerPhone() {
+        phone.call()
+    }
+    
     deinit {
         print("deint: \(self)")
     }

@@ -16,8 +16,7 @@ class ViewController: UIViewController {
         let phone = Phone()
         let person = Person(name: "John", phone: phone)
 
-        phone.call()
-
+        person.answerPhone()
     }
 }
 
