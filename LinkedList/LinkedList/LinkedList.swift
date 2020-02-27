@@ -14,7 +14,7 @@ import Foundation
 //   nil <- Bob  <->  Max  <->  Sue -> nil
 class Node: Equatable, CustomStringConvertible {
     var next: Node?
-    var prev: Node?
+    weak var prev: Node?
     var value: String
     
     init(value: String) {

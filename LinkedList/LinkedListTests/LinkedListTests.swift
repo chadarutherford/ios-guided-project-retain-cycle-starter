@@ -41,5 +41,21 @@ class LinkedListTests: XCTestCase {
         XCTAssertNil(list.head)
         XCTAssertNil(list.tail)
     }
+    
+    func testNode() {
+        var left: Node? = Node(value: "Left")
+        var right: Node? = Node(value: "Right")
+        
+        weak var weakLeft = left
+        weak var weakRight = right
+        
+        left!.next = right
+        right!.prev = left
+        
+        right = nil
+        
+        XCTAssertNil(weakLeft)
+        XCTAssertNil(weakRight)
+    }
 
 }
